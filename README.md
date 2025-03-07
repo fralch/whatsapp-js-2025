@@ -25,10 +25,16 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get install -f
 ```
 
-### Si OJO solo SI prefieres usar Chromium en lugar de Chrome, cambia la línea executablePath a:
+#### Si OJO solo SI prefieres usar Chromium en lugar de Chrome, cambia la línea executablePath a:
 ```bash
 executablePath: '/usr/bin/chromium-browser',
 ```
+### Si estas usando Chrome en lugar de Chromium, cambia la línea executablePath a:
+```bash
+which google-chrome-stable
+```
+
+
 ## Instalar Pupper 
 ```bash
 npm install puppeteer@^19.7.0 --save
