@@ -51,6 +51,7 @@ client.on('disconnected', (reason) => {
     setTimeout(() => {
         client.initialize();
     }, 10000);
+    
 });
 
 client.on('message', async (msg) => {
